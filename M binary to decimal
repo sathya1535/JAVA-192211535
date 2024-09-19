@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class R192211535
+{
+  public static void main(String [] args)
+  {
+    Scanner input=new Scanner (System.in);
+    System.out.println("enter the binary number:");
+    int bin=input.nextInt();
+    int a,i=0,dec=0;
+    while(bin>0)
+    {
+      a=bin%10;
+      dec+=a*Math.pow(2,i);
+      bin=bin/10;
+      i++;
+    }
+    System.out.print("Decimal:"+dec);
+}
+} 
