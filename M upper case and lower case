@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.Scanner;
+class sathya
+{
+    public static void main(String []args)
+    {
+        int uppercount=0,lowercount=0,digitscount=0;
+        System.out.println("enter * to exit");
+        Scanner input=new Scanner(System.in);
+        while(true)
+        {
+            System.out.print("enter the characters:");
+            char ch=input.next().charAt(0);
+            if(ch=='*')
+            {
+                break;
+            }
+        if(Character.isUpperCase(ch))
+        {
+            uppercount++;
+        }
+        else 
+        if(Character.isLowerCase(ch))
+        {
+            lowercount++;
+        }
+        else
+        if(Character.isDigit(ch))
+        {
+            digitscount++;
+        }
+        }
+        System.out.println("upper case="+uppercount);
+        System.out.println("lower case="+lowercount);
+        System.out.println("digits="+digitscount);
+        
+    }
+}
