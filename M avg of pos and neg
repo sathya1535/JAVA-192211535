@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.Scanner;
+class sathya {
+    public static void main(String[] args) {
+        int pcount = 0, ncount = 0;
+        int psum = 0, nsum = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter -1 to exit ");
+          while (true) {
+            System.out.print("enter the number:");
+             int n = input.nextInt();
+            if (n == -1) {
+                break; 
+            }
+            if (n > 0) {
+                psum=psum+n;
+                pcount++;
+            } else if (n < 0) {
+                nsum=nsum+n;
+                ncount++;
+            }
+        } 
+        if (pcount > 0) {
+            System.out.println("PosAvg = " + (double) psum / pcount);
+        } else {
+            System.out.println("No positive numbers entered.");
+        }
+        if (ncount > 0) {
+            System.out.println("NegAvg = " + (double) nsum / ncount);
+        } else {
+            System.out.println("No negative numbers entered.");
+        }
+    }
+}
