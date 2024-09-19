@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.Arrays;
+class sathya{
+    public static void main(String []args)
+    {
+        int a[]={1,24,5,3,4,25};
+        int max=a[0]; 
+        for 
+        {f  
+            if(a[i]>=max)
+            max=a[i];
+        }
+        System.out.println("original max="+max);
+        int n=2;
+        Arrays.sort(a);
+        int nthmax=a[a.length-n];
+        System.out.println("nthmax="+nthmax);
+        
+        
+        
+    }
+}
