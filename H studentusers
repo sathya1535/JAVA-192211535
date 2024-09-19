@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.Scanner;
+class sathya
+{
+    public static void main(String []args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("enter the total users:");
+        int totalusers=input.nextInt();
+        System.out.print("entr the Staff users:");
+        int staffusers=input.nextInt();
+        int nonteachingstaff=staffusers/3;
+        int studentusers=totalusers-(staffusers+nonteachingstaff);
+        System.out.println("totalusers="+totalusers);
+        System.out.println("staffusers="+staffusers);
+        System.out.println("nonteachingstaff="+nonteachingstaff);
+        System.out.println("studentusers="+studentusers);
+    }
+}
