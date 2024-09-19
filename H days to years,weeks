@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.Scanner;
+class sathya {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number of days: ");
+        int days = input.nextInt();
+        int years = days / 365;
+        int remainingDays = days % 365;
+        int weeks = remainingDays / 7;
+        remainingDays %= 7;
+        System.out.println(years + " years, " + weeks + " weeks, and " + remainingDays + " days.");
+    }
+}
