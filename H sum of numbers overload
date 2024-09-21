@@ -1,0 +1,19 @@
+class sathya{
+    int value1;
+    int value2;
+    void assignValues(int a, int b) {
+        value1 = a;
+        value2 = b;
+        System.out.println("Values: " + value1 + " and " + value2);
+    }
+    void assignValues(int a) {
+        value1 = a;
+        value2 = a;
+        System.out.println("Both values: " + value1);
+    } 
+    public static void main(String[] args) {
+        sathya s= new sathya();
+        s.assignValues(10, 20);
+        s.assignValues(30);
+    }
+}
