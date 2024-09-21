@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.Scanner;
+public class overload{
+    public static int add(int a,int b){
+        return a+b;
+    }
+    public static int add(int a,int b,int c){
+        return a+b+c;
+    }
+public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    overload Overload=new overload();
+    int sumtwo=Overload.add(5,10);
+    int sumthree=Overload.add(5,10,15);
+    System.out.println("add of two = "+sumtwo);
+    System.out.println("add of three = "+sumthree);
+}
+}
